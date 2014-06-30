@@ -38,6 +38,7 @@ class AppKernel extends Kernel
             new Puphpet\Extension\HhvmBundle\PuphpetExtensionHhvmBundle(),
             new Puphpet\Extension\RedisBundle\PuphpetExtensionRedisBundle(),
             new Puphpet\Extension\FirewallBundle\PuphpetExtensionFirewallBundle(),
+            new Puphpet\Extension\MagentoBundle\PuphpetExtensionMagentoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

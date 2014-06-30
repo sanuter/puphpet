@@ -1,0 +1,17 @@
+parameters:
+
+services:
+    puphpet.extension.magento.configure:
+        class: Puphpet\Extension\MagentoBundle\Configure
+        arguments:
+            - "@service_container"
+
+    puphpet.extension.magento.front_controller:
+        class: Puphpet\Extension\MagentoBundle\Controller\FrontController
+        calls:
+            - [ setContainer, [@service_container] ]
+
+    puphpet.extension.magento.manifest_controller:
+        class: Puphpet\Extension\MagentoBundle\Controller\ManifestController
+        calls:
+            - [ setContainer, [@service_container] ]

@@ -40,6 +40,8 @@ services:
             - [ addExtensionToGroup, [ 'work-queue', @puphpet.extension.rabbitmq.configure ] ]
         # search servers
             - [ addExtensionToGroup, [ 'search-server', @puphpet.extension.elastic_search.configure ] ]
+        # cms
+            - [ addExtensionToGroup, [ 'cms', @puphpet.extension.magento.configure ] ]
 
     puphpet.twig.base_extension:
         class: Puphpet\MainBundle\Twig\BaseExtension

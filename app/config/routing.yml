@@ -86,3 +86,7 @@ puphpet.extension.firewall:
     resource: "@PuphpetExtensionFirewallBundle/Resources/config/routing.yml"
     prefix:   /extension/firewall
 
+puphpet.extension.magento:
+    resource: "@PuphpetExtensionMagentoBundle/Resources/config/routing.yml"
+    prefix:   /extension/magento
+

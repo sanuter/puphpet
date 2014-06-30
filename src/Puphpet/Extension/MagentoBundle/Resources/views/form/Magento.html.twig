@@ -1,0 +1,37 @@
+<section id="magento">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Magento Settings</h3>
+                </div>
+
+                <div class="row install-checkbox-container">
+                    <div class="col-xs-12">
+                        <label class="checkbox-inline">
+                            <input class="install-checkbox" type="checkbox" name="magento[install]"
+                                   data-hide-on-uncheck="#magento-config-container"
+                                   {% if magento.install %}checked{% endif %} value="1" /> Install Magento
+                        </label>
+                    </div>
+                </div>
+
+                <div class="{% if not magento.install %}hidden{% endif %}" id="magento-config-container">
+                    <div class="panel-body">
+                        <div class="row form-group">
+                            <div class="col-xs-12">
+                                <p class="help-block">
+                                    Magento!!!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+    
